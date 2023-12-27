@@ -7,10 +7,9 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="433.0" prefWidth="771.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/20.0.1" fx:controller="controllers.DisplayFlightsController">
+<AnchorPane id="AnchorPane" prefHeight="433.0" prefWidth="771.0" style="-fx-background-color: #d1d5db;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.DisplayFlightsController">
    <children>
-      <Label layoutX="339.0" layoutY="29.0" text="Flights">
+      <Label layoutX="45.0" layoutY="38.0" text="Flights">
          <font>
             <Font name="American Typewriter" size="28.0" />
          </font>

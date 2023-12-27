@@ -7,80 +7,25 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="756.0" prefWidth="808.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.SignupUserController">
+<AnchorPane id="AnchorPane" prefHeight="756.0" prefWidth="808.0" style="-fx-background-color: #d1d5db;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.SignupUserController">
    <children>
-      <Label layoutX="308.0" layoutY="23.0" text="Signup User">
+      <Label layoutX="67.0" layoutY="45.0" text="Signup User">
          <font>
             <Font name="American Typewriter" size="28.0" />
          </font>
       </Label>
-      <Label layoutX="50.0" layoutY="103.0" text="First Name">
-         <font>
-            <Font name="American Typewriter" size="17.0" />
-         </font>
-      </Label>
-      <TextField fx:id="firstNameT" layoutX="161.0" layoutY="98.0" prefHeight="33.0" prefWidth="228.0" />
-      <Label layoutX="419.0" layoutY="103.0" text="Last Name">
-         <font>
-            <Font name="American Typewriter" size="17.0" />
-         </font>
-      </Label>
-      <TextField fx:id="lastNameT" layoutX="530.0" layoutY="98.0" prefHeight="33.0" prefWidth="228.0" />
-      <Label layoutX="50.0" layoutY="179.0" text="Address">
-         <font>
-            <Font name="American Typewriter" size="17.0" />
-         </font>
-      </Label>
-      <TextField fx:id="addressT" layoutX="161.0" layoutY="174.0" prefHeight="33.0" prefWidth="228.0" />
-      <Label layoutX="419.0" layoutY="179.0" text="Zip">
-         <font>
-            <Font name="American Typewriter" size="17.0" />
-         </font>
-      </Label>
-      <TextField fx:id="zipT" layoutX="530.0" layoutY="174.0" prefHeight="33.0" prefWidth="228.0" />
-      <Label layoutX="50.0" layoutY="255.0" text="State">
-         <font>
-            <Font name="American Typewriter" size="17.0" />
-         </font>
-      </Label>
-      <TextField fx:id="stateT" layoutX="161.0" layoutY="250.0" prefHeight="33.0" prefWidth="228.0" />
-      <Label layoutX="419.0" layoutY="255.0" text="Email">
-         <font>
-            <Font name="American Typewriter" size="17.0" />
-         </font>
-      </Label>
-      <TextField fx:id="emailT" layoutX="530.0" layoutY="250.0" prefHeight="33.0" prefWidth="228.0" />
-      <Label layoutX="50.0" layoutY="334.0" text="SSN">
-         <font>
-            <Font name="American Typewriter" size="17.0" />
-         </font>
-      </Label>
-      <TextField fx:id="ssnT" layoutX="161.0" layoutY="329.0" prefHeight="33.0" prefWidth="228.0" />
-      <Label layoutX="419.0" layoutY="334.0" text="Username">
-         <font>
-            <Font name="American Typewriter" size="17.0" />
-         </font>
-      </Label>
-      <TextField fx:id="usernameT" layoutX="530.0" layoutY="329.0" prefHeight="33.0" prefWidth="228.0" />
-      <Label layoutX="50.0" layoutY="412.0" text="Password">
-         <font>
-            <Font name="American Typewriter" size="17.0" />
-         </font>
-      </Label>
-      <TextField fx:id="passwordT" layoutX="161.0" layoutY="407.0" prefHeight="33.0" prefWidth="228.0" />
-      <Label layoutX="50.0" layoutY="476.0" text="Security Question">
-         <font>
-            <Font name="American Typewriter" size="17.0" />
-         </font>
-      </Label>
-      <Label layoutX="50.0" layoutY="577.0" text="Answer">
-         <font>
-            <Font name="American Typewriter" size="17.0" />
-         </font>
-      </Label>
-      <TextField fx:id="answerT" layoutX="161.0" layoutY="572.0" prefHeight="33.0" prefWidth="362.0" />
-      <Button layoutX="475.0" layoutY="671.0" mnemonicParsing="false" onAction="#saveUser" prefHeight="26.0" prefWidth="83.0" text="Save" />
-      <Button layoutX="363.0" layoutY="671.0" mnemonicParsing="false" onAction="#cancel" prefHeight="26.0" prefWidth="83.0" text="Cancel" />
-      <ComboBox fx:id="securityQuestionC" layoutX="161.0" layoutY="502.0" prefHeight="33.0" prefWidth="362.0" />
+      <TextField fx:id="firstNameT" layoutX="67.0" layoutY="98.0" prefHeight="33.0" prefWidth="228.0" promptText="First Name" />
+      <TextField fx:id="lastNameT" layoutX="332.0" layoutY="98.0" prefHeight="33.0" prefWidth="228.0" promptText="Last Name" />
+      <TextField fx:id="addressT" layoutX="67.0" layoutY="158.0" prefHeight="33.0" prefWidth="228.0" promptText="Address" />
+      <TextField fx:id="zipT" layoutX="332.0" layoutY="158.0" prefHeight="33.0" prefWidth="228.0" promptText="Zipcode" />
+      <TextField fx:id="stateT" layoutX="67.0" layoutY="217.0" prefHeight="33.0" prefWidth="228.0" promptText="State" />
+      <TextField fx:id="emailT" layoutX="332.0" layoutY="217.0" prefHeight="33.0" prefWidth="228.0" promptText="Email" />
+      <TextField fx:id="ssnT" layoutX="67.0" layoutY="282.0" prefHeight="33.0" prefWidth="228.0" promptText="SSN" />
+      <TextField fx:id="usernameT" layoutX="332.0" layoutY="282.0" prefHeight="33.0" prefWidth="228.0" promptText="Username" />
+      <TextField fx:id="passwordT" layoutX="67.0" layoutY="345.0" prefHeight="33.0" prefWidth="495.0" promptText="Password" />
+      <TextField fx:id="answerT" layoutX="67.0" layoutY="472.0" prefHeight="33.0" prefWidth="495.0" promptText="Answer" />
+      <Button layoutX="188.0" layoutY="563.0" mnemonicParsing="false" onAction="#saveUser" prefHeight="26.0" prefWidth="83.0" text="Save" />
+      <Button layoutX="67.0" layoutY="563.0" mnemonicParsing="false" onAction="#cancel" prefHeight="26.0" prefWidth="83.0" text="Cancel" />
+      <ComboBox fx:id="securityQuestionC" layoutX="67.0" layoutY="405.0" prefHeight="33.0" prefWidth="495.0" promptText="Security Question" />
    </children>
 </AnchorPane>

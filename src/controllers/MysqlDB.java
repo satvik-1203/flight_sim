@@ -14,10 +14,9 @@ public class MysqlDB {
     public static Connection getConnection() {
         Connection connection = null;
         try {
-            Class.forName("com.mysql.cj.jdbc.Driver");
 
             connection = DriverManager.getConnection(DB_URL, USERNAME, PASSWORD);
-        } catch (ClassNotFoundException | SQLException e) {
+        } catch (SQLException e) {
             e.printStackTrace();
         }
         return connection;

@@ -100,6 +100,7 @@ public class CustomerDatabase implements CustomerActions {
     @Override
     public Customer signIn(String username, String password) {
         try (Connection connection = MysqlDB.getConnection()) {
+
             // Prepare the SQL query
             String sql = "SELECT * FROM Customer WHERE username = ? AND password = ?";
             try (PreparedStatement preparedStatement = connection.prepareStatement(sql)) {

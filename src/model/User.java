@@ -2,8 +2,7 @@
 package model;
 
 abstract class User {
-    
-    
+
     private String username;
     private String password;
 
@@ -27,13 +26,7 @@ abstract class User {
     public void setPassword(String password) {
         this.password = password;
     }
-    
-   
-    
+
     public abstract boolean login();
 
-
-  
-
-  
 }

@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="864.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.DisplayCustomerReservationsController">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="864.0" style="-fx-background-color: #d1d5db;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.DisplayCustomerReservationsController">
    <children>
       <TableView fx:id="table" layoutX="40.0" layoutY="78.0" onMouseClicked="#tableClicked" prefHeight="257.0" prefWidth="791.0">
          <columns>
@@ -20,9 +20,9 @@
             <TableColumn fx:id="seatCol" editable="false" prefWidth="68.0" text="Seat" />
          </columns>
       </TableView>
-      <Label layoutX="362.0" layoutY="22.0" text="Reservations">
+      <Label layoutX="40.0" layoutY="27.0" text="Reservations">
          <font>
-            <Font size="27.0" />
+            <Font name="Comic Sans MS" size="27.0" />
          </font>
       </Label>
       <Button layoutX="368.0" layoutY="353.0" mnemonicParsing="false" onAction="#mainMenu" prefHeight="26.0" prefWidth="135.0" text="Main Menu" />

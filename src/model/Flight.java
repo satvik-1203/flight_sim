@@ -1,7 +1,6 @@
 
 package model;
 
-
 public class Flight {
     private String flightId;
     private String fromCity;
@@ -11,7 +10,8 @@ public class Flight {
     private int capacity;
     private int bookedPassengers;
 
-    public Flight(String flightId, String fromCity, String toCity, String date, String time, int capacity, int bookedPassengers) {
+    public Flight(String flightId, String fromCity, String toCity, String date, String time, int capacity,
+            int bookedPassengers) {
         this.flightId = flightId;
         this.fromCity = fromCity;
         this.toCity = toCity;
@@ -76,7 +76,5 @@ public class Flight {
     public void setBookedPassengers(int bookedPassengers) {
         this.bookedPassengers = bookedPassengers;
     }
-    
-    
 
 }
