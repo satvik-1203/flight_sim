@@ -6,9 +6,9 @@ import java.sql.SQLException;
 
 public class MysqlDB {
 
-    private static final String DB_URL = "jdbc:mysql://34.68.205.194:3306/final_project"; // Replace with your database
+    private static final String DB_URL = "jdbc:mysql://34.27.137.171:3306/final_project"; // Replace with your database
                                                                                           // URL
-    private static final String USERNAME = "side_user";
+    private static final String USERNAME = "root";
     private static final String PASSWORD = "";
 
     public static Connection getConnection() {
